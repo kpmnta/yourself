@@ -14,10 +14,22 @@
         <title>Up Style</title>
 
         <!--FAVICON-->
-        <link rel="shortcut icon" href="">
+        <link rel="shortcut icon" href="images/favicon.png" sizes="310x310" type="image/x-icon">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
         <!--PRELOADS-->
-        <link rel="preload" href="css/estilo.css" as="style">
+        <link rel="preload" href="css/style.css" as="style">
         <link rel="preload" href="js/script.js" as="script">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -25,6 +37,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
         <!--SCRIPT-->
         <script src="js/script.js" type="text/javascript"></script>
@@ -32,9 +45,16 @@
     </head>
     
     <body>
-          <!--HEADER-->
-          <div class="container">
-          <header class="header"></header>
+
+            <!--HEADER-->
+            <header class="header container-sm|md|lg|xl container-fluid mx-auto">
+                <span><!--LOGO 1--><img src="images/01_logo.png" class="img-fluid mx-auto" alt="up style app" id="logoCabide"></span>
+                <span><!--LOGO 2--><img src="images/02_logo.png" class="img-fluid mx-auto" alt="up style" id="logoName"></span>
+                <span id="socialMedia">
+                    <!--FACEBOOK--><img src="images/facebook.png" class="img-fluid mx-auto" alt="facebook" id="facebook">
+                    <!--INSTAGRAM--><img src="images/instagram.png" alt="instagram" id="instagram">
+                </span>
+             </header>
 
           <!--MAIN-->
           <main>
@@ -86,8 +106,16 @@
           </main>
          
           <!--FOOTER-->
-          <footer class="footer"></footer>
-          </div>
+
+          <footer class="footer container-sm|md|lg|xl container-fluid mx-auto">
+                <span><!--LOGO 1--><img src="images/01_logo.png" class="img-fluid mx-auto" alt="up style app" id="logoCabideFooter"></span>
+                <span><h3 id="textFooter">Saiba mais sobre a UP Style:</h3></span>
+                <span id="socialMediaFooter">
+                    <!--FACEBOOK--><img src="images/facebook.png" class="img-fluid mx-auto" alt="facebook" id="facebook">
+                    <!--INSTAGRAM--><img src="images/instagram.png" alt="instagram" id="instagram">
+                </span>
+          </footer>
+        
     </body>
 
 </html>
