@@ -361,5 +361,44 @@ Version: 1.0.0
     background: #000;
 }
 
+/* responsividade */
 
+@media (max-width: 600px) {
+
+    .about-container {
+        background-image: none;
+        height: auto;
+    }
+
+    .about-container ul {
+        display: inline;  
+    }   
+    
+    .porque-container {
+        background-color: #e9e5df;
+    }
+
+    .conteudo {
+        display: inline;
+    }
+
+    .legenda {
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    #planos{
+        background-image: none;
+        max-height: auto;
+    }
+    
+    .planos-container {
+        display: inline;
+    }
+
+    .card {
+        margin: 0 auto 25px auto;
+    }
+
+} 
 
