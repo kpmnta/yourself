@@ -210,6 +210,84 @@ Version: 1.0.0
     padding: 20px 0;
 }
 
+
+
+/*INÍCIO PÁGINA PREMIUM / TOP PREMIUM*/
+.mainPremium {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#tituloPremium1 {
+    max-width: 570px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 4vw;
+}
+
+#qrcode {
+    max-width: 288px;
+}
+
+#tituloPremium2 {
+    max-width: 824px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 4vw;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2vw;
+    margin-bottom: 5vw;
+}
+
+.labels {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.inputs {
+    width: 562px;
+    height: 57px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 1vw;
+    margin-bottom: 1vw;
+}
+
+.botao {
+    margin-top: 3vw;
+    width: 282px;
+    height: 67px; 
+    background: #262424;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;  
+}   
+/*FIM PÁGINA PREMIUM / TOP PREMIUM*/
+
 /* section planos disponiveis */
 
 #planos{
@@ -270,5 +348,6 @@ Version: 1.0.0
 .btn-primary:hover{
     background: #000;
 }
+
 
 

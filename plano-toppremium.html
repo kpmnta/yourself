@@ -38,7 +38,8 @@
 
         <!--SCRIPT-->
         <script src="js/script.js" type="text/javascript"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        
     </head>
     
     <body>
@@ -53,10 +54,37 @@
             </span>
         </header>
 
-          <!--MAIN-->
-          <section class="main">
-            <h1>Up Style - Sua Consultoria de Moda</h1>
-          </section>
+          
+        <!--MAIN-->
+        <section class="mainPremium">
+            
+            <h1 id="tituloPremium1">Inscreva-se no <strong>plano premium</strong> e dê um <strong>mega up</strong> no seu estilo!</h1>
+            <!--QR CODE--><img src="img/QRCodePagamento.png" class="efeito-grow" alt="qr code" id="qrcode">
+            <h3 id="tituloPremium2">Escaneie o código acima, faça sua transferência no valor de R$49,99, e complete o formulário abaixo que em menos de meia hora um dos nossos consultores UP Style entrará em contato com você para mais informações.</h3>
+            
+            <!--FORMULÁRIO-->
+            <form class="formulario">
+
+                <label class="labels" for="nome">Qual é o seu nome completo?</label>
+                <input class="inputs" name="nome" type="text">
+
+                <label class="labels" for="email">Qual é o seu e-mail?</label>
+                <input class="inputs" name="email" type="email">
+
+                <label class="labels" for="whatsapp">Qual é o seu WhatsApp?</label>
+                <input class="inputs" name="whatsapp" type="text" onkeypress="$(this).mask('(00) 00000-0009')">
+
+                <label class="labels" for="genero">Qual é o seu gênero?</label>
+                <input class="inputs" name="genero" type="text">
+
+                <label class="labels" for="alcunha">Como devemos te chamar?</label>
+                <input class="inputs" name="alcunha" type="text">
+
+                <button type="submit" class="botao efeito-grow" name="enviar">inscrever-se</button>
+
+            </form>
+        
+        </section>
   
         <!--FOOTER-->
         <footer class="footer container-sm|md|lg|xl container-fluid mx-auto">
