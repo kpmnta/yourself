@@ -92,6 +92,13 @@ Version: 1.0.0
 
 }
 
+@media (max-width: 450px){
+    .footer{
+        position: relative;
+        bottom: -50em;
+    }
+}
+
 @media (min-width: 790px) 
 {
     .header {
@@ -103,7 +110,7 @@ Version: 1.0.0
     }
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1025px) {
     #socialMedia{
         margin-left: 60%;
     }
