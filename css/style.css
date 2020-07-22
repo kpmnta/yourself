@@ -58,8 +58,6 @@ Version: 1.0.0
     margin: 2vw;
 }
 
-
-
 #logoCabide{
     max-width: 118px;
     height: auto;
@@ -112,6 +110,8 @@ Version: 1.0.0
 
 } 
 
+/* section about */
+
 .about-container {
     background-image: url(../img/fundo_01.png);
     background-repeat: no-repeat;
@@ -145,7 +145,6 @@ Version: 1.0.0
     padding-bottom: 45px;
 }   
 
-
 .align-right {
     text-align: right;
 }
@@ -176,6 +175,7 @@ Version: 1.0.0
     margin: auto;
 }
 
+/* section porque */
 .porque-container h1 {
     color: #E51A2F;
     font-family: 'Montserrat';
@@ -209,6 +209,7 @@ Version: 1.0.0
     color: #262424;
     padding: 20px 0;
 }
+
 
 
 /*INÍCIO PÁGINA PREMIUM / TOP PREMIUM*/
@@ -286,4 +287,67 @@ Version: 1.0.0
     color: #FFFFFF;  
 }   
 /*FIM PÁGINA PREMIUM / TOP PREMIUM*/
+
+/* section planos disponiveis */
+
+#planos{
+    background-image: url(../img/fundo_02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 838px;
+    padding-bottom: 25px;
+}
+
+#planos h3{
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 28px;
+    color: #262424;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    max-width: 250px;
+    text-align: center;
+    background-color: #E51A2F;
+    border: none;
+    border-radius: 19px;
+    color: #fff;
+}
+
+.card-subtitle {
+    padding: 25px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.padding {
+    padding-bottom: 20px;
+}
+.btn-primary{
+    padding: 10px 40px;
+    background: #262424;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover{
+    background: #000;
+}
+
+
 
