@@ -285,8 +285,20 @@ Version: 1.0.0
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;  
-}   
-/*FIM PÁGINA PREMIUM / TOP PREMIUM*/
+}  
+
+.tituloNegocio {
+    width: 669px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 1vw;
+    margin-top: 3vw;
+}
+/*FIM  PÁGINA PREMIUM / TOP PREMIUM*/
 
 /* section planos disponiveis */
 
