@@ -38,6 +38,7 @@
 
         <!--SCRIPT-->
         <script src="js/script.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
     </head>
     
@@ -53,10 +54,34 @@
             </span>
         </header>
 
-          <!--MAIN-->
-          <section class="main">
-            <h1>Up Style - Sua Consultoria de Moda</h1>
-          </section>
+            <!--MAIN-->
+            <section class="mainPremium">
+
+                <h3 class="tituloNegocio">A UP Style é uma plataforma que dá maior visibilidade ao seu negócio, conectando usuários com a sua marca.</h3>
+                <h3 class="tituloNegocio">Através da nossa plataforma e das nossas mídias sociais, os usuários conhecem sua marca, montam looks com seus produtos e se tornam futuros clientes.</h3>
+                <h3 class="tituloNegocio">Se você tem interesse em impulsionar as vendas do seu negócio, preencha o formulário abaixo para que possamos entrar em contato com você.</h3>
+                <!--FORMULÁRIO-->
+                <form class="formulario">
+
+                    <label class="labels" for="nomeEstabelecimento">Nome do estabelecimento:</label>
+                    <input class="inputs" name="nomeEstabelecimento" type="text">
+
+                    <label class="labels" for="cep">Localização (CEP):</label>
+                    <input class="inputs" name="cep" type="text" onkeypress="$(this).mask('00.000-000')">
+
+                    <label class="labels" for="canais">Em quais canais você faz divulgação online?</label>
+                    <input class="inputs" name="canais" type="text">
+
+                    <label class="labels" for="nome">Nome:</label>
+                    <input class="inputs" name="nome" type="text">
+
+                    <label class="labels" for="whatsapp">Whatsapp:</label>
+                    <input class="inputs" name="whatsapp" type="text" onkeypress="$(this).mask('(00) 00000-0009')">
+
+                    <button type="submit" class="botao efeito-grow" name="enviar">inscrever-se</button>
+
+                </form>
+            </section>
   
         <!--FOOTER-->
         <footer class="footer container-sm|md|lg|xl container-fluid mx-auto">
