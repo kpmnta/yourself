@@ -49,7 +49,7 @@
             <span><!--LOGO 1--><a target="_blank" href="https://www.upstyleapp.com"><img src="img/01_logo.png" class="img-fluid mx-auto efeito-grow" alt="up style app" id="logoCabide"></a></span>
             <span><!--LOGO 2--><img src="img/02_logo.png" class="img-fluid mx-auto" alt="up style" id="logoName"></span>
             <span id="socialMedia">
-                <!--FACEBOOK--><img src="img/facebook.png" class="img-fluid mx-auto efeito-grow" alt="facebook" id="facebook">
+                <!--FACEBOOK--><img src="img/facebook.png" target="_blank" href="https://www.facebook.com/pg/UP-Style-103711071432982/about/?ref=page_internal" class="img-fluid mx-auto efeito-grow" alt="facebook" id="facebook">
                 <!--INSTAGRAM--><a target="_blank" href="https://www.instagram.com/upstyle.app/"><img src="img/instagram.png" class="efeito-grow" alt="instagram" id="instagram"></a>
             </span>
         </header>
@@ -61,22 +61,42 @@
                 <h3 class="tituloNegocio">Através da nossa plataforma e das nossas mídias sociais, os usuários conhecem sua marca, montam looks com seus produtos e se tornam futuros clientes.</h3>
                 <h3 class="tituloNegocio">Se você tem interesse em impulsionar as vendas do seu negócio, preencha o formulário abaixo para que possamos entrar em contato com você.</h3>
                 <!--FORMULÁRIO-->
-                <form class="formulario" data-netlify="true">
+                <form class="formulario needs-validation" data-netlify="true" novalidate>
+                    
+                    <div class="form-group has-error">
+                        <label class="labels" for="nomeEstabelecimento">Nome do estabelecimento:</label>
+                        <input class="inputs form-control" name="nomeEstabelecimento" type="text" required>
+                        <div class="valid-feedback">Tudo ok!</div>
+                        <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+                    </div>
+                    
+                    <div class="form-group has-error">
+                        <label class="labels" for="cep">Localização (CEP):</label>
+                        <input class="inputs form-control" name="cep" type="text" onkeypress="$(this).mask('00.000-000')" required>
+                        <div class="valid-feedback">Tudo ok!</div>
+                        <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+                    </div>
 
-                    <label class="labels" for="nomeEstabelecimento">Nome do estabelecimento:</label>
-                    <input class="inputs" name="nomeEstabelecimento" type="text">
+                    <div class="form-group has-error">
+                        <label class="labels" for="canais">Em quais canais você faz divulgação online?</label>
+                        <input class="inputs form-control" name="canais" type="text" required>
+                        <div class="valid-feedback">Tudo ok!</div>
+                        <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+                    </div>
 
-                    <label class="labels" for="cep">Localização (CEP):</label>
-                    <input class="inputs" name="cep" type="text" onkeypress="$(this).mask('00.000-000')">
+                    <div class="form-group has-error">
+                        <label class="labels" for="nome">Nome:</label>
+                        <input class="inputs form-control" name="nome" type="text" required>
+                        <div class="valid-feedback">Tudo ok!</div>
+                        <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+                    </div>
 
-                    <label class="labels" for="canais">Em quais canais você faz divulgação online?</label>
-                    <input class="inputs" name="canais" type="text">
-
-                    <label class="labels" for="nome">Nome:</label>
-                    <input class="inputs" name="nome" type="text">
-
-                    <label class="labels" for="whatsapp">Whatsapp:</label>
-                    <input class="inputs" name="whatsapp" type="text" onkeypress="$(this).mask('(00) 00000-0009')">
+                    <div class="form-group has-error">
+                        <label class="labels" for="whatsapp">Whatsapp:</label>
+                        <input class="inputs form-control" name="whatsapp" type="text" onkeypress="$(this).mask('(00) 00000-0009')" required>
+                        <div class="valid-feedback">Tudo ok!</div>
+                        <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+                    </div>
 
                     <button type="submit" class="botao efeito-grow" name="enviar">inscrever-se</button>
 
@@ -88,7 +108,7 @@
             <span><!--LOGO 1--><a target="_blank" href="https://www.upstyleapp.com"><img src="img/01_logo.png"  class="img-fluid mx-auto efeito-grow" alt="up style app" id="logoCabideFooter"></a></span>
             <span><h3 id="textFooter">Saiba mais sobre a UP Style:</h3></span>
             <span id="socialMediaFooter">
-                <!--FACEBOOK--><img src="img/facebook.png" class="img-fluid mx-auto efeito-grow" alt="facebook" id="facebook">
+                <!--FACEBOOK--><img src="img/facebook.png" target="_blank" href="https://www.facebook.com/pg/UP-Style-103711071432982/about/?ref=page_internal" class="img-fluid mx-auto efeito-grow" alt="facebook" id="facebook">
                 <!--INSTAGRAM--><a target="_blank" href="https://www.instagram.com/upstyle.app/"><img src="img/instagram.png" class="efeito-grow" alt="instagram" id="instagram"></a>
             </span>
         </footer>
