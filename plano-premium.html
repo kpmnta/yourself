@@ -49,7 +49,7 @@
             <span><!--LOGO 1--><a target="_blank" href="https://www.upstyleapp.com"><img src="img/01_logo.png" class="img-fluid mx-auto efeito-grow" alt="up style app" id="logoCabide"></a></span>
             <span><!--LOGO 2--><img src="img/02_logo.png" class="img-fluid mx-auto" alt="up style" id="logoName"></span>
             <span id="socialMedia">
-                <!--FACEBOOK--><img src="img/facebook.png" class="img-fluid mx-auto efeito-grow" alt="facebook" id="facebook">
+                <!--FACEBOOK--><img src="img/facebook.png" target="_blank" href="https://www.facebook.com/pg/UP-Style-103711071432982/about/?ref=page_internal" class="img-fluid mx-auto efeito-grow" alt="facebook" id="facebook">
                 <!--INSTAGRAM--><a target="_blank" href="https://www.instagram.com/upstyle.app/"><img src="img/instagram.png" class="efeito-grow" alt="instagram" id="instagram"></a>
             </span>
         </header>
@@ -61,27 +61,47 @@
             <!--QR CODE--><img src="img/QRCodePagamento.png" class="efeito-grow" alt="qr code" id="qrcode">
             <h3 id="tituloPremium2">Escaneie o código acima, faça sua transferência no valor de R$29,99 e complete o formulário abaixo que em menos de meia hora um dos nossos consultores UP Style entrará em contato com você para mais informações.</h3>
             
-            <!--FORMULÁRIO-->
-            <form class="formulario" data-netlify="true">
+           <!--FORMULÁRIO-->
+           <form class="formulario needs-validation" data-netlify="true" novalidate>
 
+            <div class="form-group has-error">
                 <label class="labels" for="nome">Qual é o seu nome completo?</label>
-                <input class="inputs" name="nome" type="text">
+                <input class="inputs form-control" pattern="^\D{2,}\s[\D\s]{2,}$" name="nome" type="text" required>
+                <div class="valid-feedback">Tudo ok!</div>
+                <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+            </div>
 
+            <div class="form-group has-error">
                 <label class="labels" for="email">Qual é o seu e-mail?</label>
-                <input class="inputs" name="email" type="email">
-
+                <input class="inputs form-control" name="email" type="email" required>
+                <div class="valid-feedback">Tudo ok!</div>
+                <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+            </div>
+            
+            <div class="form-group has-error">
                 <label class="labels" for="whatsapp">Qual é o seu WhatsApp?</label>
-                <input class="inputs" name="whatsapp" type="text" onkeypress="$(this).mask('(00) 00000-0009')">
-
+                <input class="inputs form-control" name="whatsapp" type="text" onkeypress="$(this).mask('(00) 00000-0009')" required>
+                <div class="valid-feedback">Tudo ok!</div>
+                <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+            </div>
+            
+            <div class="form-group has-error">
                 <label class="labels" for="genero">Qual é o seu gênero?</label>
-                <input class="inputs" name="genero" type="text">
-
+                <input class="inputs form-control" name="genero" type="text" required>
+                <div class="valid-feedback">Tudo ok!</div>
+                <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+            </div>
+            
+            <div class="form-group has-error">
                 <label class="labels" for="alcunha">Como devemos te chamar?</label>
-                <input class="inputs" name="alcunha" type="text">
+                <input class="inputs form-control" name="alcunha" type="text" required>
+                <div class="valid-feedback">Tudo ok!</div>
+                <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+            </div>
+            
+            <button type="submit" class="botao efeito-grow" name="enviar" data-toggle="modal" data-target="#myModal">inscrever-se</button>
 
-                <button type="submit" class="botao efeito-grow" name="enviar">inscrever-se</button>
-
-            </form>
+        </form>
         
         </section>
   
@@ -90,7 +110,7 @@
             <span><!--LOGO 1--><a target="_blank" href="https://www.upstyleapp.com"><img src="img/01_logo.png"  class="img-fluid mx-auto efeito-grow" alt="up style app" id="logoCabideFooter"></a></span>
             <span><h3 id="textFooter">Saiba mais sobre a UP Style:</h3></span>
             <span id="socialMediaFooter">
-                <!--FACEBOOK--><img src="img/facebook.png" class="img-fluid mx-auto efeito-grow" alt="facebook" id="facebook">
+                <!--FACEBOOK--><img src="img/facebook.png" target="_blank" href="https://www.facebook.com/pg/UP-Style-103711071432982/about/?ref=page_internal" class="img-fluid mx-auto efeito-grow" alt="facebook" id="facebook">
                 <!--INSTAGRAM--><a target="_blank" href="https://www.instagram.com/upstyle.app/"><img src="img/instagram.png" class="efeito-grow" alt="instagram" id="instagram"></a>
             </span>
         </footer>

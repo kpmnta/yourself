@@ -60,23 +60,43 @@
             <h1 id="tituloPremium1">Inscreva-se <strong>grátis</strong> e dê um <strong>up</strong> no seu estilo!</h1>
             
             <!--FORMULÁRIO-->
-            <form class="formulario" data-netlify="true">
+            <form class="formulario needs-validation" data-netlify="true" novalidate>
 
-                <label class="labels" for="nome">Qual é o seu nome completo?</label>
-                <input class="inputs" name="nome" type="text">
+                <div class="form-group has-error">
+                    <label class="labels" for="nome">Qual é o seu nome completo?</label>
+                    <input class="inputs form-control" pattern="^\D{2,}\s[\D\s]{2,}$" name="nome" type="text" required>
+                    <div class="valid-feedback">Tudo ok!</div>
+                    <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+                </div>
 
-                <label class="labels" for="email">Qual é o seu e-mail?</label>
-                <input class="inputs" name="email" type="email">
-
-                <label class="labels" for="whatsapp">Qual é o seu WhatsApp?</label>
-                <input class="inputs" name="whatsapp" type="text" onkeypress="$(this).mask('(00) 00000-0009')">
-
-                <label class="labels" for="genero">Qual é o seu gênero?</label>
-                <input class="inputs" name="genero" type="text">
-
-                <label class="labels" for="alcunha">Como devemos te chamar?</label>
-                <input class="inputs" name="alcunha" type="text">
-
+                <div class="form-group has-error">
+                    <label class="labels" for="email">Qual é o seu e-mail?</label>
+                    <input class="inputs form-control" name="email" type="email" required>
+                    <div class="valid-feedback">Tudo ok!</div>
+                    <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+                </div>
+                
+                <div class="form-group has-error">
+                    <label class="labels" for="whatsapp">Qual é o seu WhatsApp?</label>
+                    <input class="inputs form-control" name="whatsapp" type="text" onkeypress="$(this).mask('(00) 00000-0009')" required>
+                    <div class="valid-feedback">Tudo ok!</div>
+                    <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+                </div>
+                
+                <div class="form-group has-error">
+                    <label class="labels" for="genero">Qual é o seu gênero?</label>
+                    <input class="inputs form-control" name="genero" type="text" required>
+                    <div class="valid-feedback">Tudo ok!</div>
+                    <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+                </div>
+                
+                <div class="form-group has-error">
+                    <label class="labels" for="alcunha">Como devemos te chamar?</label>
+                    <input class="inputs form-control" name="alcunha" type="text" required>
+                    <div class="valid-feedback">Tudo ok!</div>
+                    <div class="invalid-feedback">Ops, parece que você esqueceu essa parte!</div>
+                </div>
+                
                 <button type="submit" class="botao efeito-grow" name="enviar">inscrever-se</button>
 
             </form>
