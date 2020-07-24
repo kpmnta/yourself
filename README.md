@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/862322df-5d41-42f4-bf9b-042742167e8f/deploy-status)](https://app.netlify.com/sites/upstyleapp/deploys)
 
-![](/images/01_logo.png)
+![](/img/01_logo.png)
 
 # Landing Page Up Style
 > Landing Page do projeto de StartUp Up Style, criado no desafio chefão "show-me-the-startup" no Gama Experience 34XP.
